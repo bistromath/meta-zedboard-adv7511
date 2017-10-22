@@ -2,16 +2,16 @@
 # changes incompatibly
 LCONF_VERSION = "6"
 
-BBPATH = "${TOPDIR}"
+BBPATH = "${TOPDIR}:"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
+  ##COREBASE##/../meta-zedboard-adv7511 \
   ##COREBASE##/meta \
   ##COREBASE##/../meta-xilinx \
   ##COREBASE##/../meta-oe/meta-oe \
   ##COREBASE##/../meta-oe/meta-networking \
   ##COREBASE##/../meta-oe/meta-python \
   ##COREBASE##/../meta-oe/meta-filesystems \
-  ##COREBASE##/../meta-zedboard-adv7511 \
   "
 
